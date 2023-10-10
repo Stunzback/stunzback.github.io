@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar Eating Simulator</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        #abrar {
+            max-width: 100%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #abrar.enlarged {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Abrar Eating Simulator</h1>
-        <img src="abrar.jpg" alt="Abrar" id="abrar">
+        <img src="https://example.com/abrar.jpg" alt="Abrar" id="abrar">
     </div>
+
+    <script>
+        document.getElementById('abrar').addEventListener('click', function() {
+            this.classList.toggle('enlarged');
+        });
+    </script>
 </body>
 </html>
