@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <title>Complex HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>döda sven/p>
+    <h1>Complex HTML Example</h1>
+
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Employee List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Manager</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>Developer</td>
+        </tr>
+    </table>
+
+    <div>
+        <h3>Some Random Content</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget urna risus.</p>
+    </div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        function showAlert() {
+            alert("This is a JavaScript alert!");
+        }
+    </script>
+
+    <button onclick="showAlert()">Click me</button>
 </body>
 </html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Image Example</title>
-</head>
-<body>
-    <h1>My Image Gallery</h1>
-    
-    <img src="path_to_your_image/image.jpg" alt="Description of the image">
-    <img src="path_to_another_image/another_image.png" alt="Description of another image">
-<html></html>
